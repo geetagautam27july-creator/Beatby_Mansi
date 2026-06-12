@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Makeup Artist</title>
+
+<link href="https://www.instagram.com/p/DSk0gEykrl7/?igsh=MTJoaXplb2ViZm1wMA==" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:#fff;
+overflow-x:hidden;
+}
+
+section{
+padding:80px 8%;
+}
+
+h2{
+font-family:'Cinzel',serif;
+font-size:42px;
+color:#d4af37;
+text-align:center;
+margin-bottom:40px;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1500&q=80') center/cover;
+position:relative;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.7);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+animation:fadeUp 1.5s ease;
+}
+
+.hero h1{
+font-size:60px;
+font-family:'Cinzel',serif;
+color:#d4af37;
+}
+
+.hero p{
+margin-top:15px;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 35px;
+background:#d4af37;
+color:#000;
+font-weight:bold;
+text-decoration:none;
+border-radius:30px;
+transition:.4s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+/* SERVICES */
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border:1px solid #d4af37;
+border-radius:15px;
+text-align:center;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(212,175,55,.5);
+}
+
+.card h3{
+color:#d4af37;
+margin-bottom:10px;
+}
+
+/* SLIDER */
+.slider{
+max-width:1000px;
+margin:auto;
+overflow:hidden;
+border-radius:20px;
+border:2px solid #d4af37;
+}
+
+.slides{
+display:flex;
+width:400%;
+animation:slide 16s infinite;
+}
+
+.slides img{
+width:100%;
+height:500px;
+object-fit:cover;
+}
+
+@keyframes slide{
+0%,20%{transform:translateX(0);}
+25%,45%{transform:translateX(-100%);}
+50%,70%{transform:translateX(-200%);}
+75%,100%{transform:translateX(-300%);}
+}
+
+/* BEFORE AFTER */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.beforeafter{
+background:#111;
+padding:15px;
+border-radius:15px;
+border:1px solid #d4af37;
+}
+
+.beforeafter img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.label{
+display:flex;
+justify-content:space-between;
+font-weight:bold;
+color:#d4af37;
+}
+
+/* INSTAGRAM */
+.reels{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.reels iframe{
+width:100%;
+height:500px;
+border-radius:20px;
+}
+
+/* TESTIMONIAL */
+.review{
+background:#111;
+padding:30px;
+border-left:5px solid #d4af37;
+margin-bottom:20px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px rgba(0,255,0,.5);
+z-index:999;
+}
+
+/* FOOTER */
+footer{
+padding:30px;
+text-align:center;
+background:#111;
+}
+
+/* ANIMATIONS */
+.fade{
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:40px;
+}
+h2{
+font-size:32px;
+}
+.slides img{
+height:300px;
+}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+<h1>Luxury Makeup Artist</h1>
+<p>Transforming Beauty Into Art ✨</p>
+<a href="#booking" class="btn">Book Appointment</a>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="fade">
+<h2>Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Bridal Makeup</h3>
+<p>Premium bridal look with luxury finish.</p>
+</div>
+
+<div class="card">
+<h3>Engagement Makeup</h3>
+<p>Elegant and glamorous engagement makeup.</p>
+</div>
+
+<div class="card">
+<h3>Party Makeup</h3>
+<p>Perfect look for every special event.</p>
+</div>
+
+<div class="card">
+<h3>HD Makeup</h3>
+<p>Flawless HD professional makeup.</p>
+</div>
+
+</div>
+</section>
+
+<!-- PHOTO SLIDER -->
+<section class="fade">
+<h2>Portfolio</h2>
+
+<div class="slider">
+<div class="slides">
+
+<img src="YOURPHOTO1.jpg">
+<img src="YOURPHOTO2.jpg">
+<img src="YOURPHOTO3.jpg">
+<img src="YOURPHOTO4.jpg">
+
+</div>
+</div>
+</section>
+
+<!-- BEFORE AFTER -->
+<section class="fade">
+<h2>Before & After</h2>
+
+<div class="gallery">
+
+<div class="beforeafter">
+<img src="BEFOREAFTER1.jpg">
+<div class="label">
+<span>Before</span>
+<span>After</span>
+</div>
+</div>
+
+<div class="beforeafter">
+<img src="BEFOREAFTER2.jpg">
+<div class="label">
+<span>Before</span>
+<span>After</span>
+</div>
+</div>
+
+<div class="beforeafter">
+<img src="BEFOREAFTER3.jpg">
+<div class="label">
+<span>Before</span>
+<span>After</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- INSTAGRAM REELS -->
+<section class="fade">
+<h2>Instagram Reels</h2>
+
+<div class="reels">
+
+<iframe src="https://www.instagram.com/reel/DRrL1PjklDv/?igsh=a2c2ZnZ5cXlxdGFl"></iframe>
+
+<iframe src="https://www.instagram.com/reel/DRXU5qnjyJR/?igsh=MWRtNWJiMDA5b3JzNw=="></iframe>
+
+<iframe src="https://www.instagram.com/reel/DUOJGlZEiUx/?igsh=MW4wazR1ZDNyZm9rOA=="></iframe>
+
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="fade">
+<h2>Client Reviews</h2>
+
+<div class="review">
+⭐⭐⭐⭐⭐ Amazing bridal makeup. Loved the look!
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐ Very professional and luxury experience.
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐ Best makeup artist in town.
+</div>
+
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="fade">
+<h2>Book Appointment</h2>
+
+<center>
+
+<h3 style="margin-bottom:20px;">WhatsApp Booking</h3>
+
+<a class="btn"
+href="https://wa.me/918700318708text=Hello%20I%20want%20to%20book%20a%20makeup%20appointment">
+Book On WhatsApp
+</a>
+
+</center>
+
+</section>
+
+<footer>
+© 2026 Luxury Makeup Artist | All Rights Reserved
+</footer>
+
+<a href="https://wa.me/918700318708" class="whatsapp">
+💬
+</a>
+
+<script>
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".fade").forEach(el=>{
+observer.observe(el);
+});
+
+</script>
+
+</body>
+</html>
